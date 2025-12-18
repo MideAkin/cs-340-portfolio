@@ -1,34 +1,43 @@
-# CS 340 Portfolio – Project Two
+# Grazioso Salvare Rescue Dashboard
 
-## Portfolio Reflection – CS 340
+## Project Overview
+The Grazioso Salvare Rescue Dashboard is an interactive web-based dashboard developed using Python and the Dash framework. The application allows users to analyze animal shelter outcome data to support rescue operations, including water rescue, mountain/wilderness rescue, and disaster/individual tracking.
 
-### How do you write programs that are maintainable, readable, and adaptable?
-
-I write maintainable, readable, and adaptable programs by using modular design, clear naming conventions, and separation of concerns. In Project One, I created a CRUD Python module that handled all database interactions in one place. This allowed the dashboard code in Project Two to focus only on displaying and interacting with data, rather than managing database logic directly.
-
-The advantage of working this way was that changes to the database logic only needed to be made in one module, rather than throughout the entire application. This made the code easier to debug, update, and reuse. In the future, this CRUD module could be reused for other dashboards, analytics tools, or applications that need to interact with a MongoDB database.
+The dashboard connects to a MongoDB database and provides real-time data filtering, visualization, and analysis tools to assist Grazioso Salvare in making data-driven decisions.
 
 ---
 
-### How do you approach a problem as a computer scientist?
-
-I approach problems by first understanding the client’s requirements, then breaking those requirements down into smaller, manageable tasks. For the Grazioso Salvare project, I focused on understanding the database structure, the filtering requirements, and how the dashboard widgets would interact with the data.
-
-This approach differed from earlier courses where assignments were more isolated or theoretical. In this project, I had to think about real-world constraints, client expectations, and how multiple components worked together. In the future, I would continue using this structured approach by gathering requirements first, designing the data model carefully, and validating that the database supports both current and future client needs.
-
----
-
-### What do computer scientists do, and why does it matter?
-
-Computer scientists design, build, and improve systems that help organizations work more efficiently and make better decisions. This work matters because reliable software reduces errors, saves time, and allows organizations to use data effectively.
-
-This project demonstrates how a data-driven dashboard can support a company like Grazioso Salvare by making animal data easier to filter, analyze, and visualize, enabling the organization to focus more on its mission.
+## Features
+- Interactive data table with filtering and row selection
+- Rescue-type filtering using radio buttons
+- Geographic visualization of animal locations using a map
+- Pie chart displaying the top 10 animal breeds based on current filters
+- Integrated Grazioso Salvare branding with logo
+- Secure database access using a dedicated MongoDB user
 
 ---
 
-### Repository Contents
+## Technologies Used
+- **Python**
+- **Dash / Plotly**
+- **Pandas**
+- **MongoDB**
+- **JupyterDash**
+- **HTML/CSS (via Dash components)**
 
-- Project Two dashboard code  
-- Project Two README documentation  
-- Portfolio reflection (this file)
+These tools were selected to support interactive data visualization, efficient data handling, and seamless database integration.
 
+---
+
+## How to Run the Project
+1. Ensure MongoDB is running and contains the AAC shelter data.
+2. Verify the following files are located in the `code_files` directory:
+   - `ProjectTwoDashboard.ipynb`
+   - `CRUD_Python_Module.py`
+3. Open `ProjectTwoDashboard.ipynb` in JupyterLab.
+4. Restart the kernel and run all cells from top to bottom.
+5. Open the Dash application using the provided Codio/Jupyter Dash tab.
+
+---
+
+## Project Structure
